@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}Discord Bot Panel{% endblock title %}
+{% block content %}
+{% if notice %}
+    <aside>{{ notice }}</aside>
+{% endif %}
+<h1>Discord Bot Panel</h1>
+<hr>
+<form method="POST" action="/change_settings">
+    <div class="form-group">
+        <label for="msg">Custom Message for <bold>{{ username }}</bold></label> <br>
+        <input type="text" id="msg" name="msg" class="form-action">
+    </div>
+
+    <input type="submit" value="Update Settings" class="btn btn-primary">
+</form>
+<a href="/logout">Log out</a>
+{% endblock content %}

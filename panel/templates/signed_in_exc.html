@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}An Exception Occurred{% endblock title %}
+{% block content %}
+<h1>An Exception Occurred</h1>
+<hr>
+<h2>Possible Causes</h2>
+<ul>
+    <li>Provided code has expired</li>
+    <li>Code was not provided</li>
+    <li>You came here by accident</li>
+    <li>Discord API is not properly working</li>
+</ul>
+<h3>You may need to <a href="/login">log in</a> again</h3>
+{% endblock content %}
